@@ -162,7 +162,7 @@ int main()
 		}
 	}
 	else {
-		cout << "wrong password or username ";
+		cout << "wrong password or username  ";
 	}
 
 }
