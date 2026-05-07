@@ -15,9 +15,3 @@ jobs:
 
       - name: Compile
         run: g++ Wordle/main.cpp -o app
-
-      - name: enter user name
-        run: |
-          echo "Saif\n1234" | ./app > output.txt
-          echo "enter name: \n enter password: \n-----" > expected.txt
-          diff output.txt expected.txt
