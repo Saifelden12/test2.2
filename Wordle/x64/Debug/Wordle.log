@@ -1,0 +1,4 @@
+﻿  Wordle.cpp
+D:\new project\Wordle\Wordle\Wordle.cpp(84,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\new project\Wordle\Wordle\Wordle.cpp(94,9): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Wordle.vcxproj -> D:\new project\Wordle\x64\Debug\Wordle.exe
