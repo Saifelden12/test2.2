@@ -1,0 +1,23 @@
+name: Cpp CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Compile
+        run: g++ Wordle/main.cpp -o app
+
+      - name: enter user name
+        run: |
+          echo -e "Saif\n1234" | ./app > output.txt
+          echo -e "enter name: \n enter password: \n-----" > expected.txt
+          diff output.txt expected.txt
